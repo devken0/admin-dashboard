@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as *;
+
+body {
+  font-family: $system-fonts;
+}
+
+p {
+  color: $body-text;
+}
+
+.logo__text {
+  font-weight: 900;
+}
