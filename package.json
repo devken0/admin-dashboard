@@ -1,0 +1,16 @@
+{
+  "name": "admin-dashboard",
+  "version": "1.0.0",
+  "description": "A simple dashboard built using SASS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/sass:dist/css --no-source-map && cp -r src/* dist/ && rm -rf dist/sass"  
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.91.0"
+  }
+}
