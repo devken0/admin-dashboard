@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass src/sass:dist/css --no-source-map && cp -r src/* dist/ && rm -rf dist/sass"  
+    "build": "sass src/sass:dist/css --no-source-map && cp -r src/* dist/ && rm -rf dist/sass",
+    "dev": "sass -w src/sass:dist/css && cp -r src/* dist/ && rm -rf dist/sass"  
   },
   "keywords": [],
   "author": "",
