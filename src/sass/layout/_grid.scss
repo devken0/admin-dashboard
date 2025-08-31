@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+
+  &--main {
+    @extend .grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 25vh 130vh; 
+  }
+}
+
+.main-content {
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+
+.header {
+  grid-template: 1fr 1fr / 1fr; 
+  gap: 1rem;
+
+  &__top {
+    align-items: center;
+  }
+}
+
+@mixin grid-position($row-start, $col-start,
+$row-end, $col-end) {
+  grid-row-start: $row-start;
+  grid-row-end: $row-end;
+  grid-column-start: $col-start;
+  grid-column-end: $col-end;
+}

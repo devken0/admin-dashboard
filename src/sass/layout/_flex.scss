@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+
+  &--col {
+    @extend .container;
+    flex-direction: column;
+  }
+}
+
+.header__buttons {
+  gap: 1.5rem;
+}
+
+.user-greeting {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.search {
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.user {
+  gap: 1rem;
+  align-items: center;
+}

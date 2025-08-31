@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as *;
+@use "./grid" as *;
+
+.main-content {
+  @include grid-position(2, 2, 2, -1);
+  background-color: $bg-gray;
+  padding: 1rem 2rem;
+
+  .section-title {
+    margin-bottom: 0.5rem;
+  }
+
+  &__projects {
+    @include grid-position(1, 1, -1, 2);
+  }
+
+  .announcements {
+    margin-right: 3rem;
+    background-color: $bg-white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+
+    div:last-child {
+      border-bottom: none;
+    }
+  }
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, 50%);
+    gap: 1rem;
+  }
+  &__trending {
+    margin-right: 3rem;
+    .trending {
+      grid-template-columns: 1fr;
+      background-color: $bg-white;
+      border-radius: 0.5rem;
+      box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
