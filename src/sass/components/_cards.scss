@@ -1,0 +1,34 @@
+@use '../abstracts/variables' as *;
+
+.card {
+  &__title {
+    margin-bottom: 1rem;
+  };
+  &--project {
+    @extend .card;
+    background-color: $bg-white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border-left: 5px solid $secondary;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+    gap: 1rem;
+    justify-content: space-between;
+    .card__buttons {
+      align-self: end;
+      gap: 1rem;
+    }
+  }
+  &--announcement {
+    border-bottom: 1px solid $bg-gray;
+    padding: 1rem 1rem;
+  }
+  &--trending {
+    padding: 1rem 2rem;
+    align-items: center;
+    gap: 1rem;
+    .trending__user {
+      color: black;
+      font-weight: 800;
+    }
+  }
+}
